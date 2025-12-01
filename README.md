@@ -1,9 +1,9 @@
 # Here's how you can get your annotations from your e-book and Calibre to Zotero
 
-1. [[#Usage]]
-2. [[#Example with Kobo]]
-3. [[#Options for other E-Readers]]
-4. [[#Some nerd make this easier please]]
+1. [Usage](#usage)
+2. [Example with Kobo](#example-with-kobo)
+3. [Options for other E-Readers](#options-for-other-e-readers)
+4. [Some nerd make this easier please](#some-nerd-make-this-easier-please)
 
 ## Usage
 
@@ -21,19 +21,21 @@ options:
 ```
 
 1. First install the Zotero Plugin
-    This retrieves the metadata for the uploaded book (so you don't have to do that manually)
+   This retrieves the metadata for the uploaded book (so you don't have to do that manually)
 
-    1. Download the `export-metadata-helper.xpi` from Releases 
-    2. Put it into Tools -> Plugins -> Install Plugin from file
+   1. Download the `export-metadata-helper.xpi` from Releases
+   2. Put it into Tools -> Plugins -> Install Plugin from file
 2. Run the script with uv
 
 Example:
+
+```sh
 uv run main.py \
     -k YourAPIKey \
     -i Your libaryID \
     -d ~/Calibre\ Library/metadata.db \
     -b ~/Calibre\ Library/Folder/book.epub
-
+```
 
 ## Example with Kobo
 
@@ -41,24 +43,23 @@ With github.com/valeriangalliat/kobo-highlights-to-calibre we can export the hig
 
 I've cloned the repo and done a monkey patch so it works for me in the kobo folder
 
-After you exported your highlights to Calibre you can follow [[##Usage]]
+After you exported your highlights to Calibre you can follow [Usage](#usage)
 
 ## Options for other E-Readers
 
 It might be possible to sync annotations from an EPUB to calibre with KOReader
 
-PDF's should also not have this problem as they don't use a CIF for annotations, so you could also just convert it into a PDF and then do your annotations and they should show up as annotations in Zotero
+PDF's should also not have this problem as they don't use a CIF for annotations, so you could also just convert it into a PDF and then do your annotations and they should show up as annotations in Zotero.
 KOReader should make reading PDF's easier
 
 Also something I still have yet to try
 
-
 ## Some nerd make this easier please
 
-Hey! If anyone has some free time, figuring out how to convert the Calibre CFI to a Zotero CFI that would be amazing! 
+Hey! If anyone has some free time, figuring out how to convert the Calibre CFI to a Zotero CFI that would be amazing!
 These links might help with that:
 
-    https://github.com/fread-ink/epub-cfi-resolver
-    https://github.com/eliascotto/export-kobo
+* [https://github.com/fread-ink/epub-cfi-resolver](https://github.com/fread-ink/epub-cfi-resolver)
+* [https://github.com/eliascotto/export-kobo](https://github.com/eliascotto/export-kobo)
 
-or if someone at Zotero could make annoations easier to import through the API, please!
+Or if someone at Zotero could make annoations easier to import through the API, please!
