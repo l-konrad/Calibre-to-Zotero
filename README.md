@@ -1,9 +1,9 @@
 # Here's how you can get your annotations from your e-book and Calibre to Zotero
 
-1. [[##Usage]]
-2. [[##Example with Kobo]]
-3. [[##Options for other E-Readers]]
-4. [[##Some nerd make this easier please]]
+1. [[#Usage]]
+2. [[#Example with Kobo]]
+3. [[#Options for other E-Readers]]
+4. [[#Some nerd make this easier please]]
 
 ## Usage
 
