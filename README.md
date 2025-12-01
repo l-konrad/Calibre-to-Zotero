@@ -1,3 +1,5 @@
+# WARNING Don't use .kepubs on kobos you won't be able to get it to calibre
+
 # Here's how you can get your annotations from your e-book and Calibre to Zotero
 
 1. [Usage](#usage)
