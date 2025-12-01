@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "export-helper@example.com": {
+      "updates": [
+        {
+          "version": "2.0",
+          "update_link": "https://github.com/l-konrad/Calibre-to-Zotero/releases/download/v1.0/export-metadata-helper.xpi"
+        }
+      ]
+    }
+  }
+}
